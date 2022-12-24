@@ -5,16 +5,22 @@ import com.example.cookiecafetest.util.SearchDTO;
 
 import java.util.List;
 
-public class ProductList {
+public class ProductList{
 
-    private List<Product> productList;
+    private List<Product> list;
 
     private Pagination pagination;
 
+    public ProductList(List<Product> list, Pagination pagination) {
+        this.list = list;
+        this.pagination = pagination;
+    }
 
+    public List<Product> getList() {
+        return list;
+    }
 
-
-
-
-
+    public Pagination getPagination() {
+        return pagination;
+    }
 }

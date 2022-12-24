@@ -9,16 +9,11 @@ public class SearchDTO {
 
     private Pagination pagination;
 
-    public SearchDTO(int page, int recordSize, int pageSize) {
+    public SearchDTO() {
         this.page = 1;
         this.recordSize = 10;
         this.pageSize = 10;
     }
-
-    public int getOffset() {
-        return (page - 1) * recordSize;
-    }
-
     public int getPage() {
         return page;
     }

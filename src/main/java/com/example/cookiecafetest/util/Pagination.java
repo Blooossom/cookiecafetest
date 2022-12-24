@@ -48,4 +48,61 @@ public class Pagination {
         // 다음 페이지 존재 여부 확인
         existNextPage = (endPage * params.getRecordSize()) < totalRecordCount;
     }
+
+    public int getTotalRecordCount() {
+        return totalRecordCount;
+    }
+
+    public void setTotalRecordCount(int totalRecordCount) {
+        this.totalRecordCount = totalRecordCount;
+    }
+
+    public int getTotalPageCount() {
+        return totalPageCount;
+    }
+
+    public void setTotalPageCount(int totalPageCount) {
+        this.totalPageCount = totalPageCount;
+    }
+
+    public int getStartPage() {
+        return startPage;
+    }
+
+    public void setStartPage(int startPage) {
+        this.startPage = startPage;
+    }
+
+    public int getEndPage() {
+        return endPage;
+    }
+
+    public void setEndPage(int endPage) {
+        this.endPage = endPage;
+    }
+
+    public int getLimitStart() {
+        return limitStart;
+    }
+
+    public void setLimitStart(int limitStart) {
+        this.limitStart = limitStart;
+    }
+
+    public boolean isExistPrevPage() {
+        return existPrevPage;
+    }
+
+    public void setExistPrevPage(boolean existPrevPage) {
+        this.existPrevPage = existPrevPage;
+    }
+
+    public boolean isExistNextPage() {
+        return existNextPage;
+    }
+
+    public void setExistNextPage(boolean existNextPage) {
+        this.existNextPage = existNextPage;
+    }
+
 }

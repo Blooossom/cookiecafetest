@@ -34,6 +34,15 @@ public class LoginController {
         return null;
     }
 
+    @PostMapping("/logout")
+    public String logout(MemberDTO memberDTO, HttpSession session){
+        if (session.getAttribute("id") == null) {
+            return null;
+        } else {
+            session.setAttribute("id", null);
+            return "success";
+        }
+    }
 
 
 
